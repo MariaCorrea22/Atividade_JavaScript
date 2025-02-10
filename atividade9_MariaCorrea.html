@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>como você está hoje?</h2>
+<p id="demo">Hoje o dia ta uma</p>
+<button type="button" onclick="bem()">Estou Bem</button>
+<button type="button" onclick="mal()">Estou Mal</button>
+
+<script>
+    function bem(){
+        document.body.style.background='lightyellow';
+        document.getElementById('demo').innerHTML = 'Hoje o dia ta uma maravilha';
+    }
+
+    function mal(){
+        document.body.style.background='red';
+        document.getElementById('demo').innerHTML = 'Hoje o dia ta uma merd@';
+    }
+</script>
+</body>
+</html>
