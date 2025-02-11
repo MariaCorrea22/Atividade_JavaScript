@@ -1,0 +1,21 @@
+<script>
+    let peso = prompt("Quanto voce pesa?");
+    let alt = prompt("sua altura:");
+    imc=peso/(alt*alt);
+    if(imc<=18.5){
+        alert("voce está abaixo do peso");
+    }else
+        if (imc<=24.9){
+            alert("voce está normal")
+        }else
+            if(imc<=29.9){
+                alert("voce está acima do peso")
+            }else
+                if(imc<=34.9){
+                    alert("voce ta com obesidade nivel 1")
+                }else
+                    if(imc<=39.9){
+                        alert("voce ta com obesidade nivel 2")
+                    }else
+                        alert("voce ta com obesidade nivel 3")
+</script>
