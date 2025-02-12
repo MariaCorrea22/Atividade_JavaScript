@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wisth, initial-scale=1.0">
+</head>
+<body onclick="adicionar()">
+    <div id="quadrado" onclick="diminuir()"
+        style="width:200; height: 200px; background: blueviolet;"></div>
+        <script>
+            function diminuir(){
+                let quadrado = document.getElementById("quadrado");
+                let tamanho = quadrado.offsetWidth;
+                if (tamanho> 20) {
+                    quadrado.style.width = (tamanho-20) + "px";
+                    quadrado.style.height= (tamanho - 20) +"px";
+                } else{
+                    quadrado.style.display = "none";
+                }
+            }
+        </script>
+</body>
+</html>   
